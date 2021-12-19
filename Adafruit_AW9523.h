@@ -27,12 +27,17 @@
 
 #define AW9523_REG_CHIPID 0x10     ///< Register for hardcode chip ID
 #define AW9523_REG_SOFTRESET 0x7F  ///< Register for soft resetting
-#define AW9523_REG_INPUT0 0x00     ///< Register for reading input values
-#define AW9523_REG_OUTPUT0 0x02    ///< Register for writing output values
-#define AW9523_REG_CONFIG0 0x04    ///< Register for configuring direction
-#define AW9523_REG_INTENABLE0 0x06 ///< Register for enabling interrupt
+#define AW9523_REG_INPUT0 0x00     ///< Register for reading input values on Port0
+#define AW9523_REG_INPUT1 0x01     ///< Register for reading input values on Port1
+#define AW9523_REG_OUTPUT0 0x02    ///< Register for writing output values on Port0
+#define AW9523_REG_OUTPUT1 0x03    ///< Register for writing output values on Port1
+#define AW9523_REG_CONFIG0 0x04    ///< Register for configuring direction on Port0
+#define AW9523_REG_CONFIG1 0x05    ///< Register for configuring direction on Port1
+#define AW9523_REG_INTENABLE0 0x06 ///< Register for enabling interrupt on Port0
+#define AW9523_REG_INTENABLE1 0x07 ///< Register for enabling interrupt on Port1
 #define AW9523_REG_GCR 0x11        ///< Register for general configuration
-#define AW9523_REG_LEDMODE 0x12    ///< Register for configuring const current
+#define AW9523_REG_LEDMODE0 0x12    ///< Register for configuring const current on Port0
+#define AW9523_REG_LEDMODE1 0x13    ///< Register for configuring const current on Port1
 
 /*!
  *    @brief  Class that stores state and functions for interacting with
